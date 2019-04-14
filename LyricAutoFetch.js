@@ -32,7 +32,7 @@ let lyrics = [];
         }
 
         console.log('歌詞情報をjsonファイル化');
-        fs.writeFileSync('./lyric-json/lyrics.json', JSON.stringify(lyrics));
+        fs.writeFileSync('./lyric-json/lyrics.json', JSON.stringify({lyrics}));
         console.log('歌詞取得終了');
 
     } catch (e) {
